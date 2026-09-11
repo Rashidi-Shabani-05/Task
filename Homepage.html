@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple css in one page</title>
+    <link id="java" rel="stylesheet" href="style3.css">
+    <script>
+        function changeStyle(number){
+              if (number==1){
+                document.getElementById('java').href="style.css";
+              } else if (number==2){
+                  document.getElementById('java').href="style1.css";
+              } else if (number==3){
+                 document.getElementById('java').href="style2.css";
+              } else if(number==4){
+                 document.getElementById('java').href="style3.css";
+              } else {
+                 document.getElementById('java').href="";
+              }
+        }
+    </script>
+</head>
+<body>
+    <header>
+       <h1>Welcome to My Homepage</h1>
+       <p>Use the menu to select different Stylesheets</p>
+    </header>
+    <div class="cover">
+    <nav>
+        <ul>
+            <li onclick="changeStyle(1)">Stylesheet 1</li>
+            <li onclick="changeStyle(2)">Stylesheet 2</li>
+            <li onclick="changeStyle(3)">Stylesheet 3</li>
+            <li onclick="changeStyle(4)">Stylesheet 4</li>
+            <li onclick="changeStyle(0)">No Stylesheet</li>
+        </ul>
+    </nav>
+    <div class="right">
+    <main>
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is a demonstration of how different stylesheets can 
+            change the layout of your HTML page. You can change the 
+            layout of this page by selecting different stylesheets in the 
+            menu, or by selecting one of the following links: <br>
+            <a href="style1.css" onclick="changeStyle(1)"> Stylesheet1</a>,
+            <a href="style2.css" onclick="changeStyle(2)"> Stylesheet2</a>,
+            <a href="style3.css" onclick="changeStyle(3)"> Stylesheet3</a>,
+            <a href="style4.css" onclick="changeStyle(4)"> Stylesheet4</a>.</p>
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. 
+            Click here to see how the page looks like with no stylesheet: <br>
+        <a href="style.css" onclick="changeStyle(0)"> No Stylesheet</a>.</p>
+    </main>
+    <aside>
+        <h3>Side-Bar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+            volutpat</p>
+    </aside>
+    </div>
+    </div>
+    <footer>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
+            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure 
+            dolor in hendrerit in vulputate velit esse molestie consequat, vel illum 
+            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio 
+            dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te 
+            feugait nulla facilisi.</p>   
+    </footer>
+    
+</body>
+</html>
