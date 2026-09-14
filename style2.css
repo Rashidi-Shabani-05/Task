@@ -39,6 +39,7 @@ nav li:nth-child(3){
 }
 nav li:hover{
     background-color: #000;
+    cursor: pointer;
 }
 main{
     padding: 5px;

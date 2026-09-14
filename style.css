@@ -34,13 +34,14 @@ nav li{
 }
 nav li:hover{
     background-color: #fff;
+    cursor: pointer;
 }
 nav li:first-child{
     background-color:  rgba(20, 201, 44, 0.856);
 }
 main{
     flex: 3;
-    min-width: 450px;
+    min-width: 350px;
     margin: 5px;
     line-height: 30px;
 }

@@ -48,6 +48,7 @@ nav li:nth-child(2){
 nav li:hover{
     background-color: #fff;
     color: #cc0b0b;
+    cursor: pointer;
 }
 main p{
     color: black;
